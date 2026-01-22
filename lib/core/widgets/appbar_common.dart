@@ -24,7 +24,7 @@ appbarCommon(
       surfaceTintColor: Colors.transparent,
       shadowColor: showShadow ? Colors.black54 : Colors.transparent,
       centerTitle: centerTitle ? true : false,
-      backgroundColor: bgColor ?? Colors.transparent,
+      backgroundColor: bgColor ?? Colors.white,
       iconTheme: IconThemeData(color: Colors.black),
       title: Text(
         title ?? '',
@@ -47,8 +47,8 @@ appbarCommon(
               child:
                   backButtonWidget ??
                   Icon(
-                    backIcon ?? Icons.arrow_back_ios,
-                    size: 20,
+                    backIcon ?? Icons.arrow_back,
+                    size: 24,
                     color: Colors.black,
                   ),
             )

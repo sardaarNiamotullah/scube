@@ -2,33 +2,17 @@ import 'package:flutter/material.dart';
 
 class CustomThemeData {
   final Color primary;
+  final Color bgPrimary;
   final Color black;
-  final Color grey1;
   final Color greyDark;
-  final Color greyBg;
-  final Color warningRed;
-  final Color placeholder;
-  final Color border;
-  final Color badgeBg;
-  final Color badgeText;
-  final Color goldenColor;
-  final Color secondary;
-  final Color greyMedium;
+  final Color cyan;
 
   CustomThemeData({
     required this.primary,
+    required this.bgPrimary,
     required this.black,
-    required this.grey1,
     required this.greyDark,
-    required this.greyBg,
-    required this.warningRed,
-    required this.placeholder,
-    required this.border,
-    required this.badgeBg,
-    required this.badgeText,
-    required this.goldenColor,
-    required this.secondary,
-    required this.greyMedium,
+    required this.cyan
   });
 }
 

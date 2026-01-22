@@ -62,7 +62,6 @@ class ButtonPrimary extends StatelessWidget {
             else
               Row(
                 children: [
-                  icon ?? Container(),
                   Text(
                     text,
                     style:
@@ -77,6 +76,8 @@ class ButtonPrimary extends StatelessWidget {
                               : FontWeight.w600,
                         ),
                   ),
+                  gapW(20),
+                  icon ?? Container(),
                 ],
               ),
           ],

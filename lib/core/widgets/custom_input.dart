@@ -192,10 +192,10 @@ InputDecoration customInputDecoration(
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: radiusCommon(),
-      borderSide: BorderSide(color: theme.warningRed),
+      borderSide: BorderSide(color: theme.black),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: theme.warningRed),
+      borderSide: BorderSide(color: theme.black),
       borderRadius: radiusCommon(),
     ),
     hintText: hintText,
