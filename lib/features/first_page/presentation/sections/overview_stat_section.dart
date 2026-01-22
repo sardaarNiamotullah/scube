@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:scube/core/constants/assets_img_const.dart';
+import 'package:scube/core/utils/ui_const.dart';
 import 'package:scube/features/first_page/presentation/sections/cards/overview_stat_card.dart';
 
 class OverviewStatSection extends StatelessWidget {
@@ -42,6 +43,7 @@ class OverviewStatSection extends StatelessWidget {
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
       shrinkWrap: true,
+      padding: edgeInsetsZero,
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) {
         final item = overviewStats[index];

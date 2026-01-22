@@ -5,6 +5,7 @@ import 'package:scube/core/utils/ui_const.dart';
 import 'package:scube/core/widgets/appbar_common.dart';
 import 'package:scube/core/widgets/button_primary.dart';
 import 'package:scube/core/widgets/default_margin_widget.dart';
+import 'package:scube/features/first_page/presentation/sections/cards/module_temperature_card.dart';
 import 'package:scube/features/first_page/presentation/sections/overview_stat_section.dart';
 import 'package:scube/features/second_page/presentation/second_page.dart';
 
@@ -52,6 +53,12 @@ class FirstPage extends StatelessWidget {
             // Overview stats section
             //===================================================================
             const OverviewStatSection(),
+            gapH(20),
+
+            //===================================================================
+            // Temp module section
+            //===================================================================
+            const ModuleTemperatureCard(),
           ],
         ),
       ),

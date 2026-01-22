@@ -15,7 +15,7 @@ class TextUtils {
   static TextStyle title2({color, required context}) {
     return TextStyle(
       color: color ?? CustomTheme.of(context).black,
-      fontSize: 16,
+      fontSize: 20,
       fontFamily: GoogleFonts.montserrat().fontFamily,
       fontWeight: FontWeight.bold,
     );
@@ -24,7 +24,7 @@ class TextUtils {
   static TextStyle title3({color, required context}) {
     return TextStyle(
       color: color ?? CustomTheme.of(context).black,
-      fontSize: 14,
+      fontSize: 16,
       fontFamily: GoogleFonts.montserrat().fontFamily,
       fontWeight: FontWeight.bold,
     );
