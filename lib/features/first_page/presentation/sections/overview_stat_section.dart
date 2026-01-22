@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:scube/core/constants/assets_img_const.dart';
 import 'package:scube/core/utils/ui_const.dart';
-import 'package:scube/features/first_page/presentation/sections/cards/overview_stat_card.dart';
+import 'package:scube/features/first_page/presentation/sections/cards/stat_card.dart';
 
 class OverviewStatSection extends StatelessWidget {
   const OverviewStatSection({super.key});
@@ -48,9 +48,9 @@ class OverviewStatSection extends StatelessWidget {
       itemBuilder: (context, index) {
         final item = overviewStats[index];
 
-        return OverviewStatCard(
-          value: item['value']!,
-          title: item['title']!,
+        return StatCard(
+          firstLine: item['value']!,
+          secondLine: item['title']!,
           iconAddress: item['icon']!,
         );
       },

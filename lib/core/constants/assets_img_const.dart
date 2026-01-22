@@ -9,4 +9,10 @@ class AssetsImgConst {
   static const String totalEnergy = 'assets/images/total_energy.png';
 
   static const String thermometer = 'assets/images/thermometer.png';
+
+  static const String date = 'assets/images/date.png';
+  static const String inverterNumber = 'assets/images/inverter_number.png';
+  static const String totalAc = 'assets/images/total_ac.png';
+  static const String totalDc = 'assets/images/total_dc.png';
+  static const String totalPv = 'assets/images/total_pv.png';
 }
