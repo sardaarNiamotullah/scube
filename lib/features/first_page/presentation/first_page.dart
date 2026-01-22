@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:scube/core/constants/assets_svg_const.dart';
 import 'package:scube/core/themes/custom_theme.dart';
 import 'package:scube/core/utils/ui_const.dart';
 import 'package:scube/core/widgets/appbar_common.dart';
 import 'package:scube/core/widgets/button_primary.dart';
 import 'package:scube/core/widgets/default_margin_widget.dart';
+import 'package:scube/features/first_page/presentation/sections/overview_stat_section.dart';
 import 'package:scube/features/second_page/presentation/second_page.dart';
 
 class FirstPage extends StatelessWidget {
@@ -31,21 +30,28 @@ class FirstPage extends StatelessWidget {
         child: Column(
           children: [
             gapH(15),
+            //===================================================================
+            // Navigation button
+            //===================================================================
             ButtonPrimary(
               text: '2nd Page Navigate',
               onPressed: () {
                 Get.to(() => const SecondPage());
               },
               bgColor: theme.cyan,
-              borderRadius: 5,
+              borderRadius: 10,
               icon: Icon(
                 Icons.arrow_forward_ios_rounded,
                 color: Colors.white,
                 size: 14,
               ),
             ),
+            gapH(20),
 
-            SvgPicture.asset(AssetsSvgConst.acPower),
+            //===================================================================
+            // Overview stats section
+            //===================================================================
+            const OverviewStatSection(),
           ],
         ),
       ),
