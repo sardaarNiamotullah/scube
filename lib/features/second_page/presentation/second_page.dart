@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:scube/core/themes/custom_theme.dart';
 import 'package:scube/core/utils/ui_const.dart';
 import 'package:scube/core/widgets/appbar_common.dart';
-import 'package:scube/core/widgets/button_primary.dart';
 import 'package:scube/core/widgets/default_margin_widget.dart';
+import 'package:scube/core/widgets/default_page_navigation_button.dart';
 import 'package:scube/features/first_page/presentation/first_page.dart';
 
 class SecondPage extends StatelessWidget {
@@ -29,18 +29,11 @@ class SecondPage extends StatelessWidget {
         child: Column(
           children: [
             gapH(15),
-            ButtonPrimary(
+            DefaultPageNavigationButton(
               text: '1st Page Navigate',
               onPressed: () {
                 Get.to(() => const FirstPage());
               },
-              bgColor: theme.cyan,
-              borderRadius: 5,
-              icon: Icon(
-                Icons.arrow_forward_ios_rounded,
-                color: Colors.white,
-                size: 14,
-              ),
             ),
           ],
         ),
