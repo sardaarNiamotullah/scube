@@ -13,12 +13,14 @@ class ButtonPrimary extends StatelessWidget {
     this.width,
     this.borderColor,
     this.textColor,
-    this.icon,
+    this.trailingIcon,
+    this.leadingIcon,
     this.height,
     this.borderRadius,
     this.isLoading = false,
     this.textStyle,
     this.boxshadow = false,
+    this.isCenter = true,
   });
 
   final Color? bgColor;
@@ -27,12 +29,14 @@ class ButtonPrimary extends StatelessWidget {
   final double? width;
   final Color? borderColor;
   final Color? textColor;
-  final Widget? icon;
+  final Widget? trailingIcon;
+  final Widget? leadingIcon;
   final double? height;
   final double? borderRadius;
   final bool isLoading;
   final TextStyle? textStyle;
   final bool boxshadow;
+  final bool isCenter;
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +55,9 @@ class ButtonPrimary extends StatelessWidget {
           borderRadius: BorderRadius.circular(borderRadius ?? 100),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: isCenter ? .center : .start,
           children: [
+            gapW(isCenter ? 0 : 10),
             if (isLoading)
               SizedBox(
                 height: 20,
@@ -62,6 +67,10 @@ class ButtonPrimary extends StatelessWidget {
             else
               Row(
                 children: [
+                  if (leadingIcon != null) ...[
+                    leadingIcon ?? Container(),
+                    gapW(20),
+                  ],
                   Text(
                     text,
                     style:
@@ -76,8 +85,10 @@ class ButtonPrimary extends StatelessWidget {
                               : FontWeight.w600,
                         ),
                   ),
-                  gapW(20),
-                  icon ?? Container(),
+                  if (trailingIcon != null) ...[
+                    gapW(20),
+                    trailingIcon ?? Container(),
+                  ],
                 ],
               ),
           ],

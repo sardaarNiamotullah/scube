@@ -21,4 +21,10 @@ class AssetsImgConst {
   static const String livePower = 'assets/images/live_power.png';
   static const String yellowPower = 'assets/images/yellow_power.png';
   static const String sandClock = 'assets/images/sand_clock.png';
+
+  static const String charge = 'assets/images/charge.png';
+  static const String chart = 'assets/images/chart.png';
+  static const String faucet = 'assets/images/faucet.png';
+  static const String fire = 'assets/images/fire.png';
+  static const String generator = 'assets/images/generator.png';
 }
