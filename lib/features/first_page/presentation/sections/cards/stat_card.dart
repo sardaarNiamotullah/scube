@@ -7,6 +7,7 @@ class StatCard extends StatelessWidget {
   final String secondLine;
   final String iconAddress;
   final bool isTotalCard;
+
   const StatCard({
     super.key,
     required this.firstLine,
@@ -27,22 +28,32 @@ class StatCard extends StatelessWidget {
         children: [
           Image.asset(iconAddress, height: 28, width: 28, fit: BoxFit.cover),
           gapW(10),
-          Column(
-            crossAxisAlignment: .start,
-            children: [
-              Text(
-                firstLine,
-                style: isTotalCard
-                    ? TextUtils.b1Regular(context: context)
-                    : TextUtils.b1Bold(context: context),
-              ),
-              Text(
-                secondLine,
-                style: isTotalCard
-                    ? TextUtils.b1Bold(context: context)
-                    : TextUtils.b1Regular(context: context),
-              ),
-            ],
+
+          //===================================================================
+          // Text section (ellipsis-safe)
+          //===================================================================
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  firstLine,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: isTotalCard
+                      ? TextUtils.b1Regular(context: context)
+                      : TextUtils.b1Bold(context: context),
+                ),
+                Text(
+                  secondLine,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: isTotalCard
+                      ? TextUtils.b1Bold(context: context)
+                      : TextUtils.b1Regular(context: context),
+                ),
+              ],
+            ),
           ),
         ],
       ),

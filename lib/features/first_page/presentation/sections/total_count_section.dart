@@ -48,9 +48,19 @@ class TotalCountSection extends StatelessWidget {
               ),
               gapW(10),
               Expanded(
-                child: Text(
-                  'Total Num of PV Module: 6372 pcs. (585 Wp each)',
-                  style: TextUtils.b1Regular(context: context),
+                child: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Total Num of PV Module: ',
+                        style: TextUtils.b1Regular(context: context),
+                      ),
+                      TextSpan(
+                        text: '6372 pcs. (585 Wp each)',
+                        style: TextUtils.b1Bold(context: context),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

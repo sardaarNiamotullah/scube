@@ -71,11 +71,11 @@ class FirstPage extends StatelessWidget {
               gapH(20),
 
               //===================================================================
-              // Total count of eveyting section
+              // LT section
               //===================================================================
-              LtCard(),
+              const LtCard(),
               gapH(10),
-              LtCard(),
+              const LtCard(),
               gapH(20),
             ],
           ),
