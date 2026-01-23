@@ -6,6 +6,7 @@ import 'package:scube/core/widgets/appbar_common.dart';
 import 'package:scube/core/widgets/default_margin_widget.dart';
 import 'package:scube/core/widgets/default_page_navigation_button.dart';
 import 'package:scube/features/first_page/presentation/first_page.dart';
+import 'package:scube/features/second_page/presentation/sections/electricity_stat_section.dart';
 import 'package:scube/features/second_page/presentation/sections/icon_button_section.dart';
 
 class SecondPage extends StatelessWidget {
@@ -27,25 +28,33 @@ class SecondPage extends StatelessWidget {
         ],
       ),
       body: DefaultMarginWidget(
-        child: Column(
-          children: [
-            gapH(15),
-            //===================================================================
-            // Navigation button
-            //===================================================================
-            DefaultPageNavigationButton(
-              text: '1st Page Navigate',
-              onPressed: () {
-                Get.to(() => const FirstPage());
-              },
-            ),
-            gapH(20),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              gapH(15),
+              //===================================================================
+              // Navigation button
+              //===================================================================
+              DefaultPageNavigationButton(
+                text: '1st Page Navigate',
+                onPressed: () {
+                  Get.to(() => const FirstPage());
+                },
+              ),
+              gapH(20),
+              
+              //===================================================================
+              // Navigation button
+              //===================================================================
+              const ElectricityStatSection(),
+              gapH(20),
 
-            //===================================================================
-            // Icon buttons sections
-            //===================================================================
-            const IconButtonSection(),
-          ],
+              //===================================================================
+              // Icon buttons sections
+              //===================================================================
+              const IconButtonSection(),
+            ],
+          ),
         ),
       ),
     );

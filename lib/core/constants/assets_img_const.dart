@@ -27,4 +27,8 @@ class AssetsImgConst {
   static const String faucet = 'assets/images/faucet.png';
   static const String fire = 'assets/images/fire.png';
   static const String generator = 'assets/images/generator.png';
+
+  static const String asset = 'assets/images/asset.png';
+  static const String powerTower = 'assets/images/power_tower.png';
+  static const String solarCell = 'assets/images/solar_cell.png';
 }
