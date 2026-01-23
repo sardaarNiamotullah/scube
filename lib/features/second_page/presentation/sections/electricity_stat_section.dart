@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:scube/core/constants/assets_img_const.dart';
 import 'package:scube/core/utils/text_utils.dart';
 import 'package:scube/core/utils/ui_const.dart';
-import 'package:scube/features/second_page/presentation/sections/cards/data_view_card.dart';
-import 'package:scube/features/second_page/presentation/sections/cards/pie_chart.dart';
-import 'package:scube/features/second_page/presentation/sections/cards/source_load_widget.dart';
-import 'package:scube/features/second_page/presentation/sections/cards/tab_button.dart';
+import 'package:scube/features/second_page/presentation/sections/widgets/data_view_card.dart';
+import 'package:scube/features/second_page/presentation/sections/widgets/pie_chart.dart';
+import 'package:scube/features/second_page/presentation/sections/widgets/source_load_widget.dart';
+import 'package:scube/features/second_page/presentation/sections/widgets/tab_button.dart';
 
 class ElectricityStatSection extends StatelessWidget {
   const ElectricityStatSection({super.key});
