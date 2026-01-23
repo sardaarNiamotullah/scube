@@ -5,6 +5,7 @@ import 'package:scube/core/utils/ui_const.dart';
 import 'package:scube/core/widgets/appbar_common.dart';
 import 'package:scube/core/widgets/default_margin_widget.dart';
 import 'package:scube/core/widgets/default_page_navigation_button.dart';
+import 'package:scube/features/first_page/presentation/sections/cards/lt_card.dart';
 import 'package:scube/features/first_page/presentation/sections/cards/module_temperature_card.dart';
 import 'package:scube/features/first_page/presentation/sections/overview_stat_section.dart';
 import 'package:scube/features/first_page/presentation/sections/table_data_section.dart';
@@ -67,6 +68,14 @@ class FirstPage extends StatelessWidget {
               // Total count of eveyting section
               //===================================================================
               const TotalCountSection(),
+              gapH(20),
+
+              //===================================================================
+              // Total count of eveyting section
+              //===================================================================
+              LtCard(),
+              gapH(10),
+              LtCard(),
               gapH(20),
             ],
           ),

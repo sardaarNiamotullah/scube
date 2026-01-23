@@ -15,4 +15,10 @@ class AssetsImgConst {
   static const String totalAc = 'assets/images/total_ac.png';
   static const String totalDc = 'assets/images/total_dc.png';
   static const String totalPv = 'assets/images/total_pv.png';
+
+  static const String bluePower = 'assets/images/blue_power.png';
+  static const String dualYellowPower = 'assets/images/dual_yellow_power.png';
+  static const String livePower = 'assets/images/live_power.png';
+  static const String yellowPower = 'assets/images/yellow_power.png';
+  static const String sandClock = 'assets/images/sand_clock.png';
 }
