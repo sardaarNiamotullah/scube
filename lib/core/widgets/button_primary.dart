@@ -57,7 +57,6 @@ class ButtonPrimary extends StatelessWidget {
         child: Row(
           mainAxisAlignment: isCenter ? .center : .start,
           children: [
-            gapW(isCenter ? 0 : 10),
             if (isLoading)
               SizedBox(
                 height: 20,
@@ -67,6 +66,7 @@ class ButtonPrimary extends StatelessWidget {
             else
               Row(
                 children: [
+                  gapW(isCenter ? 0 : 10),
                   if (leadingIcon != null) ...[
                     leadingIcon ?? Container(),
                     gapW(20),

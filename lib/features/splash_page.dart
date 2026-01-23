@@ -20,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<void> _checkAuthState() async {
-    await Future.delayed(const Duration(milliseconds: 1500));
+    await Future.delayed(const Duration(milliseconds: 2500));
 
     Get.offAll(() => AuthPage(bottomSheetContent: SignupButtonSheetContent()));
   }

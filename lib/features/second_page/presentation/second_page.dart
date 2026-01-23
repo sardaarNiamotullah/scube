@@ -42,7 +42,7 @@ class SecondPage extends StatelessWidget {
                 },
               ),
               gapH(20),
-              
+
               //===================================================================
               // Navigation button
               //===================================================================
@@ -53,6 +53,7 @@ class SecondPage extends StatelessWidget {
               // Icon buttons sections
               //===================================================================
               const IconButtonSection(),
+              gapH(40),
             ],
           ),
         ),
